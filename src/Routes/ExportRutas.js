@@ -1,8 +1,10 @@
-//4
+//46
 const express = require('express');
 const Rutas = express.Router();
 
+const Controladores = require('../Controllers/Controladores');
 
+Rutas.get('/', Controladores.listar);
 
 
 module.exports = Rutas;

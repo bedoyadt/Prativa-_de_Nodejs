@@ -1,4 +1,4 @@
-const exprerss = require('express');
+const express = require('express');
 const path = require('path');
 const morgan = require('morgan');
 const mysql = require('mysql');
@@ -27,7 +27,7 @@ app.use(myconnection(mysql, {
 app.use('/', InportandoRutas);
 
 
-
+app.use(express.static(path.join(__dirname, 'puclic')));
 
 app.listen(app.get('port'), () => {
     console.log('Estoy En EL Servidor 2000');
