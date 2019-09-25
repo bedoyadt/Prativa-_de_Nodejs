@@ -1,0 +1,30 @@
+{
+    "name": "prativa-_de_nodejs",
+    "version": "1.0.0",
+    "description": "Pratica",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon src/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bedoyadt/Prativa-_de_Nodejs.git"
+    },
+    "author": "yeison bedoya",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/bedoyadt/Prativa-_de_Nodejs/issues"
+    },
+    "homepage": "https://github.com/bedoyadt/Prativa-_de_Nodejs#readme",
+    "dependencies": {
+        "ejs": "^2.7.1",
+        "express": "^4.17.1",
+        "express-myconnection": "^1.0.4",
+        "morgan": "^1.9.1",
+        "mysql": "^2.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^1.19.2"
+    }
+}
