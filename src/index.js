@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const mysql = require('mysql');
 const myconnection = require('express-myconnection');
 
-//1234
+//12345
 
 const app = express();
 
@@ -12,7 +12,7 @@ const InportandoRutas = require('./Routes/ExportRutas');
 
 
 app.set('port', process.env.PORT || 2000);
-app.set('Views', path.join(__dirname, 'Views'));
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(morgan('dev'));

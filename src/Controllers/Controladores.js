@@ -1,14 +1,29 @@
-const controller = {};
+const Controlador = {};
 //6 
-controller.list = (req, res) => {
-    req.getConnection((err, conn) => {
-        conn.query('SELECT * FROM registro', (err, cliente) => {
+Controlador.index = (req, res) => {
+    req.getConnection((err, conexion) => {
+        if (err) {
+            res.json(err);
+        }
+        res.render('index');
+    });
+};
+
+Controlador.listar = (req, res) => {
+    req.getConnection((err, conexion) => {
+        conexion.query('SELECT * FROM for_cliente', (err, formularioCliente) => {
             if (err) {
                 res.json(err);
             }
-            res.render('cliente', {
-                data: cliente
+            res.render('formularioCliente', {
+                data: formularioCliente
             });
         });
     });
 };
+
+
+
+
+
+module.exports = Controlador;
