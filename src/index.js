@@ -27,7 +27,9 @@ app.use(myconnection(mysql, {
 app.use('/', InportandoRutas);
 
 
-app.use(express.static(path.join(__dirname, 'puclic')));
+//app.use(express.static(path.join(__dirname, 'puclic')));
+
+app.use(express.static(path.join(__dirname, 'Public')));
 
 app.listen(app.get('port'), () => {
     console.log('Estoy En EL Servidor 2000');
