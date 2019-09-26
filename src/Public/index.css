@@ -1,8 +1,4 @@
-.masthead {
-    height: 100vh;
-    min-height: 500px;
-    background-image: url('https://image.freepik.com/foto-gratis/estudio-diseno-grafico-espacio-trabajo_67155-1341.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
 }
