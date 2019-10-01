@@ -21,8 +21,9 @@ app.use(myconnection(mysql, {
     user: 'root',
     password: 'bedoya701',
     post: 3306,
-    database: 'formulario'
+    database: 'formularuo'
 }, 'single'));
+app.use(express.urlencoded({ extended: false }));
 
 app.use('/', InportandoRutas);
 
