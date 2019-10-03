@@ -150,25 +150,44 @@
         </div>
         <!-- Card deck -->
     </div>
-
-
+    <!--
     <div class="container">
-        <h1>Contatenos</h1>
-        <div class="row">
-            <form class="col s12">
-                <div class="md-form mt-0 input-field col s12 ">
-                    <input type="text" name="nombre" required class="form-control ">
-                    <label for="materialRegisterFormFirstName ">Nombre Completo</label>
+        <section class="page-footer font-small mdb-color lighten-2 pt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h1 style="font-family: cursive;"><strong>Escribanos | Nuestro personal esta listo para atenderte</strong></h1>
+                        <p style="font-family: cursive;">Somos numero uno en stencion al Cliente</p>
+                    </div>
                 </div>
-                <div class="md-form mt-0 input-field col s5">
-                    <input type="email" name="email" required class="form-control">
-                    <label for="materialRegisterFormEmail">E-mail</label>
+                <div class="row">
+                    <div class=" col s12">
+                        <form action="/send-email" method="POST">
+                            <div class="md-form mt-0 input-field col s12 ">
+                                <input type="text" name="nombre" required class="form-control ">
+                                <label for="nombre " class="text-uppercase font-weight-bold  text-white">¿Cuál es tu Nombre?</label>
+                            </div>
+                            <div class="md-form mt-0 input-field col s12 ">
+                                <input type="email" name="email" required class="form-control ">
+                                <label for="email " class="text-uppercase font-weight-bold  text-white">Correo Electrónico</label>
+                            </div>
+                            <div class="md-form mt-0 input-field col s12 ">
+                                <input type="text" name="telefono" required class="form-control ">
+                                <label for="telefono " class="text-uppercase font-weight-bold  text-white">Telefono</label>
+                            </div>
+                            <div class="md-form mt-0 input-field col s5">
+                                <textarea name="comentatio" class="form-control md-textarea" rows="3"></textarea>
+                                <label for="comentatio" class="text-uppercase font-weight-bold  text-white">Cuentanos más</label>
+                            </div>
+                            <div class="col-md-6 container">
+                                <button class="btn btn-info  btn-block my-4 waves-effect z-depth-0 ">Guardar</button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
-                <div class="md-form mt-0 input-field col s5">
-                    <textarea name="comentario" class="form-control md-textarea" rows="3"></textarea>
-                    <label for="materialRegisterFormComentario">Comentario</label>
-                </div>
-            </form>
-        </div>
+            </div>
+        </section> -->
     </div>
+
     <% include partials/_footer %>
